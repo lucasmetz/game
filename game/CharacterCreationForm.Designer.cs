@@ -31,7 +31,7 @@
             this.cbS = new System.Windows.Forms.ComboBox();
             this.cbA = new System.Windows.Forms.ComboBox();
             this.cbC = new System.Windows.Forms.ComboBox();
-            this.cbI = new System.Windows.Forms.ComboBox();
+            this.cbW = new System.Windows.Forms.ComboBox();
             this.cbL = new System.Windows.Forms.ComboBox();
             this.lblS = new System.Windows.Forms.Label();
             this.lblA = new System.Windows.Forms.Label();
@@ -41,7 +41,8 @@
             this.cbChar = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pbCharacter = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.nametxt = new System.Windows.Forms.TextBox();
+            this.namelbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCharacter)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,9 +57,10 @@
             "3",
             "4",
             "5"});
-            this.cbS.Location = new System.Drawing.Point(234, 26);
+            this.cbS.Location = new System.Drawing.Point(156, 17);
+            this.cbS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbS.Name = "cbS";
-            this.cbS.Size = new System.Drawing.Size(248, 52);
+            this.cbS.Size = new System.Drawing.Size(167, 52);
             this.cbS.TabIndex = 1;
             this.cbS.SelectedIndexChanged += new System.EventHandler(this.cbS_SelectedIndexChanged);
             // 
@@ -73,10 +75,12 @@
             "3",
             "4",
             "5"});
-            this.cbA.Location = new System.Drawing.Point(234, 99);
+            this.cbA.Location = new System.Drawing.Point(156, 64);
+            this.cbA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbA.Name = "cbA";
-            this.cbA.Size = new System.Drawing.Size(248, 52);
+            this.cbA.Size = new System.Drawing.Size(167, 52);
             this.cbA.TabIndex = 2;
+            this.cbA.SelectedIndexChanged += new System.EventHandler(this.cbA_SelectedIndexChanged);
             // 
             // cbC
             // 
@@ -89,26 +93,28 @@
             "3",
             "4",
             "5"});
-            this.cbC.Location = new System.Drawing.Point(234, 173);
+            this.cbC.Location = new System.Drawing.Point(156, 112);
+            this.cbC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbC.Name = "cbC";
-            this.cbC.Size = new System.Drawing.Size(248, 52);
+            this.cbC.Size = new System.Drawing.Size(167, 52);
             this.cbC.TabIndex = 3;
             // 
-            // cbI
+            // cbW
             // 
-            this.cbI.BackColor = System.Drawing.Color.HotPink;
-            this.cbI.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbI.FormattingEnabled = true;
-            this.cbI.Items.AddRange(new object[] {
+            this.cbW.BackColor = System.Drawing.Color.HotPink;
+            this.cbW.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbW.FormattingEnabled = true;
+            this.cbW.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5"});
-            this.cbI.Location = new System.Drawing.Point(234, 246);
-            this.cbI.Name = "cbI";
-            this.cbI.Size = new System.Drawing.Size(248, 52);
-            this.cbI.TabIndex = 4;
+            this.cbW.Location = new System.Drawing.Point(156, 160);
+            this.cbW.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbW.Name = "cbW";
+            this.cbW.Size = new System.Drawing.Size(167, 52);
+            this.cbW.TabIndex = 4;
             // 
             // cbL
             // 
@@ -121,9 +127,10 @@
             "3",
             "4",
             "5"});
-            this.cbL.Location = new System.Drawing.Point(234, 324);
+            this.cbL.Location = new System.Drawing.Point(156, 211);
+            this.cbL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbL.Name = "cbL";
-            this.cbL.Size = new System.Drawing.Size(248, 52);
+            this.cbL.Size = new System.Drawing.Size(167, 52);
             this.cbL.TabIndex = 5;
             // 
             // lblS
@@ -132,7 +139,8 @@
             this.lblS.BackColor = System.Drawing.Color.HotPink;
             this.lblS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblS.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS.Location = new System.Drawing.Point(12, 26);
+            this.lblS.Location = new System.Drawing.Point(8, 17);
+            this.lblS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblS.Name = "lblS";
             this.lblS.Size = new System.Drawing.Size(164, 46);
             this.lblS.TabIndex = 6;
@@ -144,7 +152,8 @@
             this.lblA.BackColor = System.Drawing.Color.LawnGreen;
             this.lblA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblA.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblA.Location = new System.Drawing.Point(12, 99);
+            this.lblA.Location = new System.Drawing.Point(8, 64);
+            this.lblA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblA.Name = "lblA";
             this.lblA.Size = new System.Drawing.Size(129, 46);
             this.lblA.TabIndex = 7;
@@ -156,7 +165,8 @@
             this.lblC.BackColor = System.Drawing.Color.HotPink;
             this.lblC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblC.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblC.Location = new System.Drawing.Point(12, 173);
+            this.lblC.Location = new System.Drawing.Point(8, 112);
+            this.lblC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblC.Name = "lblC";
             this.lblC.Size = new System.Drawing.Size(176, 46);
             this.lblC.TabIndex = 8;
@@ -168,7 +178,8 @@
             this.lblI.BackColor = System.Drawing.Color.LawnGreen;
             this.lblI.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblI.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblI.Location = new System.Drawing.Point(12, 246);
+            this.lblI.Location = new System.Drawing.Point(8, 160);
+            this.lblI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblI.Name = "lblI";
             this.lblI.Size = new System.Drawing.Size(79, 46);
             this.lblI.TabIndex = 9;
@@ -180,7 +191,8 @@
             this.lblL.BackColor = System.Drawing.Color.HotPink;
             this.lblL.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblL.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblL.Location = new System.Drawing.Point(12, 324);
+            this.lblL.Location = new System.Drawing.Point(8, 211);
+            this.lblL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblL.Name = "lblL";
             this.lblL.Size = new System.Drawing.Size(101, 46);
             this.lblL.TabIndex = 10;
@@ -196,9 +208,10 @@
             "Bruiser",
             "Assassin",
             "Cyborg"});
-            this.cbChar.Location = new System.Drawing.Point(648, 929);
+            this.cbChar.Location = new System.Drawing.Point(432, 604);
+            this.cbChar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbChar.Name = "cbChar";
-            this.cbChar.Size = new System.Drawing.Size(890, 74);
+            this.cbChar.Size = new System.Drawing.Size(595, 74);
             this.cbChar.TabIndex = 11;
             this.cbChar.SelectedIndexChanged += new System.EventHandler(this.cbChar_SelectedIndexChanged);
             // 
@@ -207,38 +220,55 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("London", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(63, 467);
+            this.label1.Location = new System.Drawing.Point(39, 424);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(469, 108);
             this.label1.TabIndex = 12;
             this.label1.Text = "Continue";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pbCharacter
             // 
-            this.pbCharacter.Location = new System.Drawing.Point(655, 12);
+            this.pbCharacter.Location = new System.Drawing.Point(437, 8);
+            this.pbCharacter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbCharacter.Name = "pbCharacter";
-            this.pbCharacter.Size = new System.Drawing.Size(883, 872);
+            this.pbCharacter.Size = new System.Drawing.Size(589, 567);
             this.pbCharacter.TabIndex = 0;
             this.pbCharacter.TabStop = false;
             this.pbCharacter.Click += new System.EventHandler(this.pbCharacter_Click);
             // 
-            // label2
+            // nametxt
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
-            this.label2.Location = new System.Drawing.Point(527, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 23);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "0";
+            this.nametxt.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
+            this.nametxt.Location = new System.Drawing.Point(158, 315);
+            this.nametxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nametxt.Name = "nametxt";
+            this.nametxt.Size = new System.Drawing.Size(165, 27);
+            this.nametxt.TabIndex = 14;
+            this.nametxt.TextChanged += new System.EventHandler(this.nametxt_TextChanged);
+            // 
+            // namelbl
+            // 
+            this.namelbl.AutoSize = true;
+            this.namelbl.BackColor = System.Drawing.Color.DodgerBlue;
+            this.namelbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.namelbl.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl.Location = new System.Drawing.Point(8, 305);
+            this.namelbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.namelbl.Name = "namelbl";
+            this.namelbl.Size = new System.Drawing.Size(117, 46);
+            this.namelbl.TabIndex = 15;
+            this.namelbl.Text = "Name";
             // 
             // CharacterCreation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1742, 1015);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1161, 660);
+            this.Controls.Add(this.namelbl);
+            this.Controls.Add(this.nametxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbChar);
             this.Controls.Add(this.lblL);
@@ -247,11 +277,12 @@
             this.Controls.Add(this.lblA);
             this.Controls.Add(this.lblS);
             this.Controls.Add(this.cbL);
-            this.Controls.Add(this.cbI);
+            this.Controls.Add(this.cbW);
             this.Controls.Add(this.cbC);
             this.Controls.Add(this.cbA);
             this.Controls.Add(this.cbS);
             this.Controls.Add(this.pbCharacter);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CharacterCreation";
             this.Text = "qq";
             this.Load += new System.EventHandler(this.CharacterCreation_Load);
@@ -267,7 +298,7 @@
         private System.Windows.Forms.ComboBox cbS;
         private System.Windows.Forms.ComboBox cbA;
         private System.Windows.Forms.ComboBox cbC;
-        private System.Windows.Forms.ComboBox cbI;
+        private System.Windows.Forms.ComboBox cbW;
         private System.Windows.Forms.ComboBox cbL;
         private System.Windows.Forms.Label lblS;
         private System.Windows.Forms.Label lblA;
@@ -276,6 +307,7 @@
         private System.Windows.Forms.Label lblL;
         private System.Windows.Forms.ComboBox cbChar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox nametxt;
+        private System.Windows.Forms.Label namelbl;
     }
 }

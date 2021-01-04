@@ -10,29 +10,31 @@ using System.Windows.Forms;
 
 namespace game
 {
-    public partial class Form1 : Form
+    public partial class DeathScreen : Form
     {
-        public Form1()
+        Class1 something;
+        public DeathScreen(Class1 f)
         {
             InitializeComponent();
+            
+        }
+        private void DeathScreen_Load(object sender, EventArgs e)
+        {
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        private void start_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             CharacterCreation n = new CharacterCreation();
             n.Show();
             this.Hide();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
