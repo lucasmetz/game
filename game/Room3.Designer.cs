@@ -34,17 +34,17 @@
             this.charismalbl = new System.Windows.Forms.Label();
             this.agilitylbl = new System.Windows.Forms.Label();
             this.strengthlbl = new System.Windows.Forms.Label();
-            this.nobtn = new System.Windows.Forms.Button();
+            this.aglbtn = new System.Windows.Forms.Button();
             this.yesbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.introtxt = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.charbtn = new System.Windows.Forms.Button();
+            this.luckbtn = new System.Windows.Forms.Button();
             this.pb = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.openbtn = new System.Windows.Forms.Button();
+            this.opbtn = new System.Windows.Forms.Button();
+            this.fowardbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,8 +55,7 @@
             this.healthlbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.healthlbl.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
             this.healthlbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.healthlbl.Location = new System.Drawing.Point(129, 6);
-            this.healthlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.healthlbl.Location = new System.Drawing.Point(194, 9);
             this.healthlbl.Name = "healthlbl";
             this.healthlbl.Size = new System.Drawing.Size(56, 23);
             this.healthlbl.TabIndex = 21;
@@ -68,8 +67,7 @@
             this.lucklbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lucklbl.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
             this.lucklbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.lucklbl.Location = new System.Drawing.Point(61, 139);
-            this.lucklbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lucklbl.Location = new System.Drawing.Point(92, 214);
             this.lucklbl.Name = "lucklbl";
             this.lucklbl.Size = new System.Drawing.Size(56, 23);
             this.lucklbl.TabIndex = 20;
@@ -81,8 +79,7 @@
             this.witlbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.witlbl.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
             this.witlbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.witlbl.Location = new System.Drawing.Point(61, 116);
-            this.witlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.witlbl.Location = new System.Drawing.Point(92, 178);
             this.witlbl.Name = "witlbl";
             this.witlbl.Size = new System.Drawing.Size(56, 23);
             this.witlbl.TabIndex = 19;
@@ -94,8 +91,7 @@
             this.charismalbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.charismalbl.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
             this.charismalbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.charismalbl.Location = new System.Drawing.Point(1, 162);
-            this.charismalbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.charismalbl.Location = new System.Drawing.Point(2, 249);
             this.charismalbl.Name = "charismalbl";
             this.charismalbl.Size = new System.Drawing.Size(56, 23);
             this.charismalbl.TabIndex = 18;
@@ -107,8 +103,7 @@
             this.agilitylbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.agilitylbl.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
             this.agilitylbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.agilitylbl.Location = new System.Drawing.Point(1, 139);
-            this.agilitylbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.agilitylbl.Location = new System.Drawing.Point(2, 214);
             this.agilitylbl.Name = "agilitylbl";
             this.agilitylbl.Size = new System.Drawing.Size(56, 23);
             this.agilitylbl.TabIndex = 17;
@@ -120,31 +115,29 @@
             this.strengthlbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.strengthlbl.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
             this.strengthlbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.strengthlbl.Location = new System.Drawing.Point(1, 116);
-            this.strengthlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.strengthlbl.Location = new System.Drawing.Point(2, 178);
             this.strengthlbl.Name = "strengthlbl";
             this.strengthlbl.Size = new System.Drawing.Size(56, 23);
             this.strengthlbl.TabIndex = 16;
             this.strengthlbl.Text = "label2";
             // 
-            // nobtn
+            // aglbtn
             // 
-            this.nobtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
-            this.nobtn.Location = new System.Drawing.Point(530, 569);
-            this.nobtn.Margin = new System.Windows.Forms.Padding(2);
-            this.nobtn.Name = "nobtn";
-            this.nobtn.Size = new System.Drawing.Size(204, 39);
-            this.nobtn.TabIndex = 14;
-            this.nobtn.Text = "Sneak past him (Agility)";
-            this.nobtn.UseVisualStyleBackColor = true;
+            this.aglbtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
+            this.aglbtn.Location = new System.Drawing.Point(795, 875);
+            this.aglbtn.Name = "aglbtn";
+            this.aglbtn.Size = new System.Drawing.Size(306, 60);
+            this.aglbtn.TabIndex = 14;
+            this.aglbtn.Text = "Sneak past him (Agility)";
+            this.aglbtn.UseVisualStyleBackColor = true;
+            this.aglbtn.Click += new System.EventHandler(this.aglbtn_Click);
             // 
             // yesbtn
             // 
             this.yesbtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
-            this.yesbtn.Location = new System.Drawing.Point(530, 514);
-            this.yesbtn.Margin = new System.Windows.Forms.Padding(2);
+            this.yesbtn.Location = new System.Drawing.Point(795, 791);
             this.yesbtn.Name = "yesbtn";
-            this.yesbtn.Size = new System.Drawing.Size(178, 39);
+            this.yesbtn.Size = new System.Drawing.Size(267, 60);
             this.yesbtn.TabIndex = 13;
             this.yesbtn.Text = "Punch him (Strength)\r\n";
             this.yesbtn.UseVisualStyleBackColor = true;
@@ -155,10 +148,9 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(523, 470);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(784, 723);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(748, 152);
+            this.label1.Size = new System.Drawing.Size(1122, 234);
             this.label1.TabIndex = 12;
             this.label1.Text = "What will you do?\r\n";
             // 
@@ -167,103 +159,99 @@
             this.introtxt.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.introtxt.Font = new System.Drawing.Font("Trebuchet MS", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.introtxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.introtxt.Location = new System.Drawing.Point(-2, 470);
-            this.introtxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.introtxt.Location = new System.Drawing.Point(-3, 723);
             this.introtxt.Name = "introtxt";
-            this.introtxt.Size = new System.Drawing.Size(521, 152);
+            this.introtxt.Size = new System.Drawing.Size(782, 234);
             this.introtxt.TabIndex = 11;
             this.introtxt.Text = "You see a man gaurding a box. He hasn\'t noticed you yet. Who knows what could be " +
     "in that box?";
             // 
-            // button1
+            // charbtn
             // 
-            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
-            this.button1.Location = new System.Drawing.Point(992, 514);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(269, 94);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Convince him to let you have access to the box (Charisma)";
-            this.button1.UseVisualStyleBackColor = true;
+            this.charbtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
+            this.charbtn.Location = new System.Drawing.Point(1488, 791);
+            this.charbtn.Name = "charbtn";
+            this.charbtn.Size = new System.Drawing.Size(404, 145);
+            this.charbtn.TabIndex = 22;
+            this.charbtn.Text = "Convince him to let you have access to the box (Charisma)";
+            this.charbtn.UseVisualStyleBackColor = true;
+            this.charbtn.Click += new System.EventHandler(this.charbtn_Click);
             // 
-            // button2
+            // luckbtn
             // 
-            this.button2.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
-            this.button2.Location = new System.Drawing.Point(769, 514);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(178, 94);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Let fate decide (Luck)\r\n";
-            this.button2.UseVisualStyleBackColor = true;
+            this.luckbtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
+            this.luckbtn.Location = new System.Drawing.Point(1154, 791);
+            this.luckbtn.Name = "luckbtn";
+            this.luckbtn.Size = new System.Drawing.Size(267, 145);
+            this.luckbtn.TabIndex = 23;
+            this.luckbtn.Text = "Let fate decide (Luck)\r\n";
+            this.luckbtn.UseVisualStyleBackColor = true;
+            this.luckbtn.Click += new System.EventHandler(this.luckbtn_Click);
             // 
             // pb
             // 
-            this.pb.Location = new System.Drawing.Point(-3, -3);
-            this.pb.Margin = new System.Windows.Forms.Padding(2);
+            this.pb.Location = new System.Drawing.Point(-4, -5);
             this.pb.Name = "pb";
-            this.pb.Size = new System.Drawing.Size(128, 117);
+            this.pb.Size = new System.Drawing.Size(192, 180);
             this.pb.TabIndex = 15;
             this.pb.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::game.Properties.Resources.room3;
-            this.pictureBox1.Location = new System.Drawing.Point(-149, -186);
+            this.pictureBox1.Location = new System.Drawing.Point(-224, -286);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1433, 943);
+            this.pictureBox1.Size = new System.Drawing.Size(2150, 1451);
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // openbtn
             // 
-            this.button3.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
-            this.button3.Location = new System.Drawing.Point(523, 470);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(393, 152);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "Open the box";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.openbtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
+            this.openbtn.Location = new System.Drawing.Point(785, 723);
+            this.openbtn.Name = "openbtn";
+            this.openbtn.Size = new System.Drawing.Size(590, 234);
+            this.openbtn.TabIndex = 25;
+            this.openbtn.Text = "Open the box";
+            this.openbtn.UseVisualStyleBackColor = true;
+            this.openbtn.Visible = false;
+            this.openbtn.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // opbtn
             // 
-            this.button4.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
-            this.button4.Location = new System.Drawing.Point(913, 470);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(358, 152);
-            this.button4.TabIndex = 26;
-            this.button4.Text = "Pass up the oppurtunity";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.opbtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
+            this.opbtn.Location = new System.Drawing.Point(1369, 723);
+            this.opbtn.Name = "opbtn";
+            this.opbtn.Size = new System.Drawing.Size(537, 234);
+            this.opbtn.TabIndex = 26;
+            this.opbtn.Text = "Pass up the oppurtunity";
+            this.opbtn.UseVisualStyleBackColor = true;
+            this.opbtn.Visible = false;
+            this.opbtn.Click += new System.EventHandler(this.opbtn_Click);
             // 
-            // button5
+            // fowardbtn
             // 
-            this.button5.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
-            this.button5.Location = new System.Drawing.Point(523, 470);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(748, 152);
-            this.button5.TabIndex = 27;
-            this.button5.Text = "Go forward";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.fowardbtn.Font = new System.Drawing.Font("Trebuchet MS", 8.25F);
+            this.fowardbtn.Location = new System.Drawing.Point(784, 685);
+            this.fowardbtn.Name = "fowardbtn";
+            this.fowardbtn.Size = new System.Drawing.Size(1122, 234);
+            this.fowardbtn.TabIndex = 27;
+            this.fowardbtn.Text = "Go forward";
+            this.fowardbtn.UseVisualStyleBackColor = true;
+            this.fowardbtn.Visible = false;
+            this.fowardbtn.Click += new System.EventHandler(this.button5_Click);
             // 
             // Room3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1272, 619);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1908, 952);
+            this.Controls.Add(this.fowardbtn);
+            this.Controls.Add(this.opbtn);
+            this.Controls.Add(this.openbtn);
+            this.Controls.Add(this.luckbtn);
+            this.Controls.Add(this.charbtn);
             this.Controls.Add(this.healthlbl);
             this.Controls.Add(this.lucklbl);
             this.Controls.Add(this.witlbl);
@@ -271,12 +259,11 @@
             this.Controls.Add(this.agilitylbl);
             this.Controls.Add(this.strengthlbl);
             this.Controls.Add(this.pb);
-            this.Controls.Add(this.nobtn);
+            this.Controls.Add(this.aglbtn);
             this.Controls.Add(this.yesbtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.introtxt);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Room3";
             this.Text = "Room3";
             ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
@@ -295,15 +282,15 @@
         private System.Windows.Forms.Label agilitylbl;
         private System.Windows.Forms.Label strengthlbl;
         private System.Windows.Forms.PictureBox pb;
-        private System.Windows.Forms.Button nobtn;
+        private System.Windows.Forms.Button aglbtn;
         private System.Windows.Forms.Button yesbtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label introtxt;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button charbtn;
+        private System.Windows.Forms.Button luckbtn;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button openbtn;
+        private System.Windows.Forms.Button opbtn;
+        private System.Windows.Forms.Button fowardbtn;
     }
 }

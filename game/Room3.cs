@@ -49,8 +49,8 @@ namespace game
             if (something.str >= 4)
             {
                 introtxt.Text = "You successfully give the guard a hard slug to the face. Now that the guard is dealt with, the box is left to your devices.";
-                button3.Visible = true;
-                button4.Visible = true;
+                openbtn.Visible = true;
+                opbtn.Visible = true;
             }
             else
             {
@@ -73,8 +73,8 @@ namespace game
             if (something.agl >= 2)
             {
                 introtxt.Text = "You slip past the guard without him noticing. Now that the guard is dealt with, the box is left to your devices.";
-                button3.Visible = true;
-                button4.Visible = true;
+                openbtn.Visible = true;
+                opbtn.Visible = true;
                 
             }
             else
@@ -93,8 +93,8 @@ namespace game
             if (something.luck >= 5)
             {
                 introtxt.Text = "The guard's head starts nodding off and he falls asleep. Now that the guard is dealt with, the box is left to your devices.";
-                button3.Visible = true;
-                button4.Visible = true;
+                openbtn.Visible = true;
+                opbtn.Visible = true;
                 
             }
             else
@@ -109,8 +109,8 @@ namespace game
             if (something.chr >= 4)
             {
                 introtxt.Text = "You successfully convince the guard that you are the one who was supposed to recieve the box.  Now that the guard is dealt with, the box is left to your devices.";
-                button3.Visible = true;
-                button4.Visible = true;
+                openbtn.Visible = true;
+                opbtn.Visible = true;
             }
             else
             {
@@ -129,28 +129,28 @@ namespace game
                     i = something.health - 5;
                     i = something.health;
                     healthlbl.Text = "" + something.health;
-                    button5.Visible = true;
+                    fowardbtn.Visible = true;
                 if (something.health <= 0)
                     {
                     DeathScreen n = new DeathScreen(something);
                     n.Show();
                     this.Hide();
                   }
-                    button5.Visible = true;
+                    fowardbtn.Visible = true;
                 }
                 else
                 {
                     introtxt.Text = "You look into the box, anticipation flowing through you, only to find nothing.";
-                    button5.Visible = true;
+                    fowardbtn.Visible = true;
                 }      
                     
             
             
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void opbtn_Click(object sender, EventArgs e)
         {
-            button5.Visible = true;
+            fowardbtn.Visible = true;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -158,6 +158,58 @@ namespace game
             BossRoom n = new BossRoom(something);
             n.Show();
             this.Hide();
+        }
+
+        private void aglbtn_Click(object sender, EventArgs e)
+        {
+            if (something.agl >= 2)
+            {
+                introtxt.Text = "You slip past the guard without him noticing. Now that the guard is dealt with, the box is left to your devices.";
+                openbtn.Visible = true;
+                opbtn.Visible = true;
+
+            }
+            else
+            {
+                introtxt.Text = "The guard notices you and quickly pushes you away. Looks like you're not getting access to the box this time. -2 Health";
+
+                int i;
+                i = something.health - 2;
+                healthlbl.Text = "" + i;
+                i = something.health;
+                healthlbl.Text = "" + something.health;
+            }
+        }
+
+        private void luckbtn_Click(object sender, EventArgs e)
+        {
+            if (something.luck >= 5)
+            {
+                introtxt.Text = "The guard's head starts nodding off and he falls asleep. Now that the guard is dealt with, the box is left to your devices.";
+                openbtn.Visible = true;
+                opbtn.Visible = true;
+
+            }
+            else
+            {
+                introtxt.Text = "Nothing happens.";
+
+
+            }
+        }
+
+        private void charbtn_Click(object sender, EventArgs e)
+        {
+            if (something.chr >= 4)
+            {
+                introtxt.Text = "You successfully convince the guard that you are the one who was supposed to recieve the box.  Now that the guard is dealt with, the box is left to your devices.";
+                openbtn.Visible = true;
+                opbtn.Visible = true;
+            }
+            else
+            {
+                introtxt.Text = "The guard calls your bluff. Looks like you're not getting access to the box this time.";
+            }
         }
     }
 }
